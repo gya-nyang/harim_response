@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/* 체크박스, 전체메뉴, 장바구니 아이콘 숨기기 */
+
+#toggle, 
+label[for=toggle], 
+.cart_btn {
+    display:none;
+}
+
+header {
+    position:relative;
+    background:#333;
+    z-index:100;
+}
+
+
+
+
+
+fieldset legend,
+fieldset span {
+    display:none;
+}
+
+fieldset {
+    position:absolute;
+    right:-20px;
+    top:60px;
+}
+
+#search {
+    width:30px;
+    height:30px;
+    border-radius:26px;
+    text-align:center;
+    border:none;
+    transition:0.3s;
+}
+
+#search:focus {
+    width:230px;
+}
+
+label.fa-search {
+    font-size:22px;
+    transform:translate(-30px, 4px);
+    transition:0.3s;
+}
+
+#search:focus ~ label.fa-search {
+    transform:translate(-36px, 4px);
+}
+
+
+/* main */
+
+main > .slide > h2 {
+    display:none;
+}
+
+.free-ex {
+    background:#e3292a;
+}
+
+
+/* 푸터상단 */
+
+
+footer {
+    background:#454545;
+    height:360px;
+}
+
+.footer_top {
+    height:60px;
+    background:#989898;
+}
+
+.f_nav {
+    display:flex;
+    /* justify-content:space-evenly; */
+    justify-content:space-between;
+
+    width:1200px;
+    margin:0 auto;
+}
+
+.f_lnb, footer dl  {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.f_lnb li {
+    margin:0 15px;
+}
+
+.f_lnb li a {
+    font-weight:bold;
+    font-size:14px;
+    color:#333;
+    line-height:60px;
+}
+
+.f_nav dl {
+    width:600px;
+    line-height:60px;
+    font-size:14px;
+}
+
+.f_nav a {
+    color:#fff;
+}
+
+.f_nav dl dd span {
+    padding-left:100px;
+}
+
+.footer_info {
+    position:relative;
+    width:1200px;
+    margin:0 auto;
+    padding:15px 0;
+    color:#fff;
+}
+
+.footer_info dd {
+    font-size:18px;
+    color:#f1f1f1;
+    line-height:46px;
+}
+
+.footer_info dd h3 {
+    font-weight:300;
+}
+
+.number {
+    font-size:34px;
+    font-weight:400;
+    color:#fff;
+}
+
+.sns {
+    /* position:absolute; */
+    top:40px;
+    right:0;
+}
+
+.sns a {
+    color:#fff;
+    padding:0 10px;
+}
+
+.sns a span{
+    display:none;
+}
+
+address {
+    width:1200px;
+    margin:0 auto;
+    padding:30px 30px 10px;
+    box-sizing:border-box;
+    color:#ccc;
+    line-height:30px;
+    border-top:1px solid #e1e1e1;
+    display:flex;
+    justify-content:space-between;
+}
+
+address .a_info {
+    width:55%;
+}
+
+address .a_pay {
+    width:40%;
+}
